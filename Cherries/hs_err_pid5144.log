@@ -1,0 +1,164 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=5144, tid=0x00000000000003f0
+#
+# JRE version:  (8.0_201-b09) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.201-b09 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002dcd800):  JavaThread "Unknown thread" [_thread_in_vm, id=1008, stack(0x0000000002cc0000,0x0000000002dc0000)]
+
+Stack: [0x0000000002cc0000,0x0000000002dc0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002dcd800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=1008, stack(0x0000000002cc0000,0x0000000002dc0000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x0000000080000000, size: 2048 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ PSYoungGen      total 16896K, used 296K [0x00000000d5580000, 0x00000000d6800000, 0x0000000100000000)
+  eden space 14848K, 2% used [0x00000000d5580000,0x00000000d55ca3e0,0x00000000d6400000)
+  from space 2048K, 0% used [0x00000000d6600000,0x00000000d6600000,0x00000000d6800000)
+  to   space 2048K, 0% used [0x00000000d6400000,0x00000000d6400000,0x00000000d6600000)
+ ParOldGen       total 38400K, used 0K [0x0000000080000000, 0x0000000082580000, 0x00000000d5580000)
+  object space 38400K, 0% used [0x0000000080000000,0x0000000080000000,0x0000000082580000)
+ Metaspace       used 751K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 76K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000012290000,0x00000000126a0000] byte_map_base: 0x0000000011e90000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000061934ce0
+ Begin Bits: [0x0000000012b50000, 0x0000000014b50000)
+ End Bits:   [0x0000000014b50000, 0x0000000016b50000)
+
+Polling page: 0x0000000001380000
+
+CodeCache: size=245760Kb used=327Kb max_used=327Kb free=245432Kb
+ bounds [0x0000000002ed0000, 0x0000000003140000, 0x0000000011ed0000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 1.188 loading class java/lang/Short
+Event: 1.188 loading class java/lang/Short done
+Event: 1.188 loading class java/lang/Integer
+Event: 1.189 loading class java/lang/Integer done
+Event: 1.189 loading class java/lang/Long
+Event: 1.190 loading class java/lang/Long done
+Event: 1.198 loading class java/lang/NullPointerException
+Event: 1.199 loading class java/lang/NullPointerException done
+Event: 1.199 loading class java/lang/ArithmeticException
+Event: 1.206 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff6301c0000 - 0x00007ff6301f7000 	C:\Program Files\Java\jre1.8.0_201\bin\java.exe
+0x00007ffaeea70000 - 0x00007ffaeec5d000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffaec0e0000 - 0x00007ffaec193000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffaebae0000 - 0x00007ffaebd73000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffaee1a0000 - 0x00007ffaee243000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffaebe50000 - 0x00007ffaebeee000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffaec3c0000 - 0x00007ffaec45e000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffaedf20000 - 0x00007ffaee042000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffaee250000 - 0x00007ffaee3e7000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffaeba90000 - 0x00007ffaebab0000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffaee5a0000 - 0x00007ffaee5c9000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffaeb100000 - 0x00007ffaeb29a000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffaeb2a0000 - 0x00007ffaeb340000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffaeac80000 - 0x00007ffaead7a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffad8280000 - 0x00007ffad84f9000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17763.379_none_05b83be8071c94a1\COMCTL32.dll
+0x00007ffaee600000 - 0x00007ffaee92d000 	C:\WINDOWS\System32\combase.dll
+0x00007ffaeb030000 - 0x00007ffaeb0ae000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffaee5d0000 - 0x00007ffaee5fe000 	C:\WINDOWS\System32\IMM32.DLL
+0x00000000619c0000 - 0x0000000061a91000 	C:\Program Files\Java\jre1.8.0_201\bin\msvcr100.dll
+0x0000000061110000 - 0x00000000619b4000 	C:\Program Files\Java\jre1.8.0_201\bin\server\jvm.dll
+0x00007ffaeda90000 - 0x00007ffaeda98000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffae8e90000 - 0x00007ffae8e99000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffaec060000 - 0x00007ffaec0cd000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffae7f70000 - 0x00007ffae7f94000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffae54b0000 - 0x00007ffae54ba000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffae7d70000 - 0x00007ffae7d9d000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffaeb0b0000 - 0x00007ffaeb0fa000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffaea5e0000 - 0x00007ffaea5ef000 	C:\Program Files\Java\jre1.8.0_201\bin\verify.dll
+0x00007ffac9230000 - 0x00007ffac9259000 	C:\Program Files\Java\jre1.8.0_201\bin\java.dll
+0x00007ffade600000 - 0x00007ffade616000 	C:\Program Files\Java\jre1.8.0_201\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Xmx2048M -Dfile.encoding=UTF8 
+java_command: E:\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Tools\sdktools.jar -
+java_class_path (initial): E:\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Tools\sdktools.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;
+USERNAME=Admin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 21 Model 16 Stepping 1, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17763 (10.0.17763.379)
+
+CPU:total 2 (initial active 2) (2 cores per cpu, 1 threads per core) family 21 model 16 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+Memory: 4k page, physical 3646836k(784324k free), swap 5743988k(5352k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.201-b09) for windows-amd64 JRE (1.8.0_201-b09), built on Dec 15 2018 18:36:39 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Mar 30 17:59:19 2019
+timezone: Финляндия (зима)
+elapsed time: 1 seconds (0d 0h 0m 1s)
+
