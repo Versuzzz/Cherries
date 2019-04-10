@@ -245,8 +245,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 205, y: -86}
-  m_SizeDelta: {x: 670, y: 933}
+  m_AnchoredPosition: {x: 174, y: -124}
+  m_SizeDelta: {x: 798, y: 1288}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468653238
 MonoBehaviour:
@@ -907,7 +907,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -339, y: -510}
+  m_AnchoredPosition: {x: -432.5, y: -720}
   m_SizeDelta: {x: 307, y: 84}
   m_Pivot: {x: 0.5, y: 0.49999994}
 --- !u!114 &1935861560
@@ -975,7 +975,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -113.99, y: -1124.8}
+  m_AnchoredPosition: {x: -89.163, y: -1312.8}
   m_SizeDelta: {x: 84.656, y: 62.001}
   m_Pivot: {x: -0.8131132, y: -9.238602}
 --- !u!114 &2033147523
@@ -1043,7 +1043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -45.16, y: -487}
+  m_AnchoredPosition: {x: -20.328, y: -675}
   m_SizeDelta: {x: 250, y: 131}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &2080937339
@@ -1111,7 +1111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 290, y: -486.5}
+  m_AnchoredPosition: {x: 290.83, y: -675}
   m_SizeDelta: {x: 292, y: 130}
   m_Pivot: {x: 0.8607268, y: 0.5}
 --- !u!114 &2133175751
@@ -1179,8 +1179,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -828}
-  m_SizeDelta: {x: 1258, y: 552}
+  m_AnchoredPosition: {x: 1, y: -922}
+  m_SizeDelta: {x: 1258, y: 364}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2144339761
 MonoBehaviour:

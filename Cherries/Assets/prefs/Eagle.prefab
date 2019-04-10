@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114970740187286712}
   - component: {fileID: 60780573234383186}
   - component: {fileID: 95521872309243568}
+  - component: {fileID: 114191739804978052}
   m_Layer: 0
   m_Name: Eagle
   m_TagString: Bomb
@@ -98,6 +99,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114191739804978052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677868455042578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32be7c9ce8d537f479858eedc7584055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Eagle_: {fileID: 1677868455042578}
 --- !u!114 &114970740187286712
 MonoBehaviour:
   m_ObjectHideFlags: 1

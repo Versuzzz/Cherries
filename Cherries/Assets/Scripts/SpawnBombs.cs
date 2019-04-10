@@ -16,4 +16,11 @@ public class SpawnBombs : MonoBehaviour {
             yield return new WaitForSeconds(0.8f);
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Cherry" || collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
