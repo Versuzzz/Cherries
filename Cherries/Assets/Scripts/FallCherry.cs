@@ -21,7 +21,7 @@ public class FallCherry : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        transform.position -= new Vector3(0, fallspeed * Time.deltaTime, 0);
+        transform.position -= new Vector3(0, fallspeed * Time.deltaTime, 0); //TODO: я конечно не эксперт, но такие константы типа fallspeed лучше выносить в отдельный файл
 
     }
 }

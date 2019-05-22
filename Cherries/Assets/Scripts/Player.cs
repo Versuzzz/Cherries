@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Cherry")
         {
             score += 1;
-            scoreText.text = score + " points";
+            scoreText.text = score + " points"; // не оч, лучше отдельный лейбл для + points, отдельный для очков
         }
     }
 }

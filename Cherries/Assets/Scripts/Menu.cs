@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+///ЫЫЫ сразу видно скомунизженый код)0
+/// </summary>
 public class Menu : MonoBehaviour {
     public void OnClickStart() //PLay
     {

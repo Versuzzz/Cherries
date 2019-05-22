@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WalkLeft : MonoBehaviour {
-
+public class WalkLeft : MonoBehaviour { 
+    //это для анимаций класс?
 	// Use this for initialization
 	void Start () {
 		

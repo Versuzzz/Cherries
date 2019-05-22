@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.Animations;
 
-public class WalkRight : MonoBehaviour {
+public class WalkRight : MonoBehaviour { //Почему walkleft не выглядит так же?
+
     public Transform Player;
     public Animation WalkRight_;
     public float lastcord;

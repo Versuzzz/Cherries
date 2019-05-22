@@ -3,7 +3,7 @@
 public class MovingPlayer : MonoBehaviour {
     public Transform player;
     [SerializeField]
-    private float speed = 20f;
+    private float speed = 20f; //CONSTANT
 
     private void OnMouseDrag()
     {
