@@ -27,7 +27,10 @@ public class Menu : MonoBehaviour {
     {
         SceneManager.LoadScene("Author"); //Автор
     }
-
+    public void Shop()
+    {
+        SceneManager.LoadScene("Shop");
+    }
 
 
 }
